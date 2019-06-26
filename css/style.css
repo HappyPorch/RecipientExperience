@@ -4,7 +4,6 @@ h1, h2, h3, h4 {
 }
 
 
-
 p {
     color: #000;
     font-family: 'Tinos', serif;
@@ -26,6 +25,13 @@ body{
     margin: 1rem 0 2rem 0;
 }
 
+.gift-voucher-container {
+    background-image: url(../img/voucher-1-mobile-500.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat
+}
+
 .gift-voucher {
     display: flex;
     flex-direction: column;
@@ -33,10 +39,6 @@ body{
     align-items: center;
     min-height: 300px;
     padding: 25px 125px;
-    background-image: url(../img/voucher-1-mobile-500.svg);
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat
 }
 
 .voucher-information {
