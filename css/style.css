@@ -39,6 +39,7 @@ body{
     background-repeat:no-repeat
 }
 
+/* MARK: I like how you've laid this out, it will be easy to convert to scss when you copy it over :) */
 .voucher-information {
     border-top: 3px solid #a5793c;
     border-bottom: 3px solid #a5793c;
@@ -56,7 +57,16 @@ body{
 }
 
     .voucher-information__content h4 {
+        /* MARK: Be careful using element selectors, it greatly reduces performance. CSS works by reading the selector
+        right-to-left, so in this case it will select all h4 elements and then filter by the ones in the .voucher-information__content.
+        I think in the SKC solution, there are .h4 classes (and other heading classes) which will help. This will also mean that you can 'fake'
+        the appearence of certain elements as to not hard the semantics of the HTML. e.g. apply a h2 style to a h1 element. 
+        */
         font-size: 1.1rem;
+        /* MARK: When you copy these styles over, it's probably a good idea to compare existing heading and base sizes to the ones used here. 
+           At some point (remembering we'll be introducing modular scale during checkout redesigns), we'll be updating the font sizes anyway but 
+           we still need to be sure that whatever is there is consistent across the site 
+           */
         text-align: left;
         margin-bottom:0.25rem
     }

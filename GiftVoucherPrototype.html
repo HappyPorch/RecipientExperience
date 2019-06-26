@@ -10,9 +10,14 @@
 </head>
 
 <body class="container">
+    <!-- MARK: For improved semantics, I'd add <main> here with the container class and then make all the high-level 
+         divs (welcome, gift-voucher, voucher-information etc) <section> elements. Or, should there be a section gift that wraps the welcome message and 
+         gift-voucher? Think about the hierarchy of content on the page and how it should be structured/flow.
+         Run the HTML through this outliner and see what the structure looks like https://gsnedders.html5.org/outliner/ -->
     <div class="welcome-message">
         <p>
             We are delighted to reveal your gift is &hellip;
+            <!-- MARK: Nice use of the html character instead of dots :D -->
         </p>
     </div>
     <div class="gift-voucher vertical-spacing">
@@ -21,6 +26,7 @@
         </div>
         <div class="gift-voucher__body">
             <h2 class="gift-voucher__title">The Langham Afternoon Tea with Wedgewood For Two</h2>
+            <!-- MARK: Should this be a h1 element since it's the main heading on the page? You could still make it appear as a h2 using a .h2 class ;) -->
             <p class="gift-voucher__desc">
                 A luxury afternoon tea experience for two, served in the elegant langham Rose tea ware created exclusively by Wedgewood for The langham Hotels.
             </p>
@@ -40,6 +46,10 @@
     <div class="voucher-information vertical-spacing row">
         <div class="voucher-information__column col-12 col-md-5">
             <div class="voucher-information__content text-justify">
+                <!-- MARK: Is the text justified in the designs? Maybe point out to Sandrine that eventhough it looks nice, it's shi*t for readability and if she argues,
+                     send over some links to prove your point. This should be left-justified since it's a 
+                     block of text that is intended to be read. 
+                    -->
                 <h4>How to Enjoy your experience?</h4>
                 <p>Please contact us to reserve your experience.</p>
                 <div class="voucher-information__contact container">
@@ -47,10 +57,12 @@
                     <div class="voucher-information__contact__icon">
                         <img class="" src="img/phone.svg" alt="">
                         <p>+44 (0)20 7965 0195</p>
+                        <!-- MARK: I think this can be a anchor tag with href="tel:020..." for mobile helpfulness -->
                     </div>
                     <div class="voucher-information__contact__icon">
                         <img class="" src="img/envelope.svg" alt="">
                         <a href="mailto:" reservations@palm-court.co.uk">reservations@palm-court.co.uk</a>
+                        <!-- MARK: There is an extra quote here that isn't needed -->
                     </div>
                 </div>
             </div>
@@ -58,6 +70,7 @@
                 <h4>What is my voucher reference number?</h4>
                 <div class="voucher-information__reference container">
                     <p class="col-12 text-center">44940 - 2193048 - 3087561</p>
+                    <!-- MARK: I think there is a longer - html character that might look nicer? -->
                 </div>
                 <div class="voucher-information__reference-instructions">
                     <p>
