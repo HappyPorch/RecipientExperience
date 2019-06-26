@@ -1,0 +1,137 @@
+h1, h2, h3, h4 {
+    font-family: 'Quattrocento', serif;
+    text-transform:uppercase
+}
+
+
+
+p {
+    color: #000;
+    font-family: 'Tinos', serif;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vertical-spacing{
+    margin: 2rem auto;
+}
+
+.welcome-message{
+    margin: 1rem 0 2rem 0;
+}
+
+.gift-voucher {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 300px;
+    padding: 25px 125px;
+    background-image: url(../img/voucher-1-mobile-500.svg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat
+}
+
+.voucher-information {
+    border-top: 3px solid #a5793c;
+    border-bottom: 3px solid #a5793c;
+    padding: 1.5rem 0;
+}
+
+.voucher-information__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.voucher-information__content{
+    margin-bottom: 2rem
+}
+
+    .voucher-information__content h4 {
+        font-size: 1.1rem;
+        text-align: left;
+        margin-bottom:0.25rem
+    }
+
+.voucher-information__content p {
+    margin-bottom: 0.5rem;
+}
+
+.voucher-information__contact p {
+    margin-bottom: 0;
+}
+
+.voucher-information__contact__icon {
+    display: flex;
+    flex-direction:row;
+    align-items:center
+}
+
+    .voucher-information__contact__icon img{
+        max-width:15px;
+        height:auto;
+        margin-right:1rem;
+    }
+
+    .voucher-information__reference {
+        border: 2px solid black;
+        padding: 1rem 0;
+    }
+
+.voucher-information__reference p {
+    margin-bottom: 0;
+}
+
+.voucher-information__reference-instructions p {
+    font-size: 0.75rem;
+    color: rgba(0,0,0,0.6);
+    font-style: italic;
+    margin-top:0.3rem;
+}
+
+.voucher-action__button-container {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    margin-top: 2rem;
+    margin-bottom:3rem
+}
+
+.voucher-action__button-container button {
+    border: 1px solid #a5793c;
+    background: #fad1d3;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.voucher-action__button-container button p {
+    color: #a5793c;
+    margin-bottom:0;
+    margin-left: 1rem;
+}
+
+@media (min-width: 768px) {
+    .gift-voucher {
+        background-image: url(../img/voucher-1.svg);
+    }
+    .voucher-action__button-container {
+        flex-direction: row;
+    }
+
+        .voucher-action__button-container button {
+            margin: 0 2rem;
+        }
+}
