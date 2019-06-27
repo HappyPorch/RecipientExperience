@@ -27,7 +27,7 @@ body{
 
 .gift-voucher-container {
     background-image: url(../img/voucher-1-mobile-500.svg);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat
 }
@@ -35,10 +35,10 @@ body{
 .gift-voucher {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    min-height: 300px;
-    padding: 25px 125px;
+    min-height: 700px;
+    padding: 0 10%;
 }
 
 .voucher-information {
@@ -58,16 +58,7 @@ body{
 }
 
     .voucher-information__content h4 {
-        /* MARK: Be careful using element selectors, it greatly reduces performance. CSS works by reading the selector
-        right-to-left, so in this case it will select all h4 elements and then filter by the ones in the .voucher-information__content.
-        I think in the SKC solution, there are .h4 classes (and other heading classes) which will help. This will also mean that you can 'fake'
-        the appearence of certain elements as to not hard the semantics of the HTML. e.g. apply a h2 style to a h1 element. 
-        */
         font-size: 1.1rem;
-        /* MARK: When you copy these styles over, it's probably a good idea to compare existing heading and base sizes to the ones used here. 
-           At some point (remembering we'll be introducing modular scale during checkout redesigns), we'll be updating the font sizes anyway but 
-           we still need to be sure that whatever is there is consistent across the site 
-           */
         text-align: left;
         margin-bottom:0.25rem
     }
@@ -135,8 +126,12 @@ body{
 }
 
 @media (min-width: 768px) {
-    .gift-voucher {
+    .gift-voucher-container {
         background-image: url(../img/voucher-1.svg);
+    }
+    .gift-voucher {
+        min-height: 300px;
+        padding: 0 15%;
     }
     .voucher-action__button-container {
         flex-direction: row;
