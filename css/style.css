@@ -4,7 +4,7 @@ h1, h2, h3, h4 {
 }
 
 
-p {
+p, a {
     color: #000;
     font-family: 'Tinos', serif;
     font-size: 1rem;
@@ -41,7 +41,6 @@ body{
     padding: 25px 125px;
 }
 
-/* MARK: I like how you've laid this out, it will be easy to convert to scss when you copy it over :) */
 .voucher-information {
     border-top: 3px solid #a5793c;
     border-bottom: 3px solid #a5793c;

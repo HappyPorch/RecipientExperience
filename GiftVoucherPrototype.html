@@ -9,70 +9,56 @@
     <link href="https://fonts.googleapis.com/css?family=Quattrocento|Tinos&display=swap" rel="stylesheet">
 </head>
 
-<body class="container">
-    <!-- MARK: For improved semantics, I'd add <main> here with the container class and then make all the high-level 
-         divs (welcome, gift-voucher, voucher-information etc) <section> elements. Or, should there be a section gift that wraps the welcome message and 
-         gift-voucher? Think about the hierarchy of content on the page and how it should be structured/flow.
-         Run the HTML through this outliner and see what the structure looks like https://gsnedders.html5.org/outliner/ -->
-    <div class="welcome-message">
+<body>
+    <main class="container">
+    <section class="welcome-message text-center">
         <p>
             We are delighted to reveal your gift is &hellip;
-            <!-- MARK: Nice use of the html character instead of dots :D -->
         </p>
-    </div>
-    <div class="gift-voucher-container">
-        <div class="gift-voucher vertical-spacing">
+    </section>
+    <section class="gift-voucher vertical-spacing">
             <div class="gift-voucher__logo">
                 <img src="img/the-langham-london2.png" />
             </div>
             <div class="gift-voucher__body">
-                <h2 class="gift-voucher__title">The Langham Afternoon Tea with Wedgewood For Two</h2>
-                <!-- MARK: Should this be a h1 element since it's the main heading on the page? You could still make it appear as a h2 using a .h2 class ;) -->
+                <h1 class="gift-voucher__title">The Langham Afternoon Tea with Wedgewood For Two</h1>
                 <p class="gift-voucher__desc">
                     A luxury afternoon tea experience for two, served in the elegant langham Rose tea ware created exclusively by Wedgewood for The langham Hotels.
                 </p>
             </div>
-        </div>
-    </div>
-    <div class="image-container row vertical-spacing">
+    </section>
+    <section class="image-container row vertical-spacing">
         <img class="col-12 col-md-4 img-fluid" src="img/hotel.png" />
         <img class="col-12 col-md-4 img-fluid" src="img/experience.png" />
         <img class="col-12 col-md-4 img-fluid" src="img/stairs.png" />
-    </div>
+    </section>
     <!--
     <div class="image-container row vertical-spacing">
         <img class="col-12 img-fluid" src="img/experience.png" />
     </div>
         -->
 
-    <div class="voucher-information vertical-spacing row">
+    <section class="voucher-information vertical-spacing row">
         <div class="voucher-information__column col-12 col-md-5">
-            <div class="voucher-information__content text-justify">
-                <!-- MARK: Is the text justified in the designs? Maybe point out to Sandrine that eventhough it looks nice, it's shi*t for readability and if she argues,
-                     send over some links to prove your point. This should be left-justified since it's a 
-                     block of text that is intended to be read. 
-                    -->
-                <h4>How to Enjoy your experience?</h4>
+            <div class="voucher-information__content">
+                <h4 class="voucher-information__content-title">How to Enjoy your experience?</h4>
                 <p>Please contact us to reserve your experience.</p>
                 <div class="voucher-information__contact container">
                     <p>The Langham London</p>
                     <div class="voucher-information__contact__icon">
                         <img class="" src="img/phone.svg" alt="">
-                        <p>+44 (0)20 7965 0195</p>
-                        <!-- MARK: I think this can be a anchor tag with href="tel:020..." for mobile helpfulness -->
+                        <a href="tel:02079650195">+44 (0)20 7965 0195</a>
                     </div>
                     <div class="voucher-information__contact__icon">
                         <img class="" src="img/envelope.svg" alt="">
-                        <a href="mailto:" reservations@palm-court.co.uk">reservations@palm-court.co.uk</a>
-                        <!-- MARK: There is an extra quote here that isn't needed -->
+                        <a href="mailto: reservations@palm-court.co.uk">reservations@palm-court.co.uk</a>
                     </div>
                 </div>
             </div>
-            <div class="voucher-information__content text-justify">
-                <h4>What is my voucher reference number?</h4>
+            <div class="voucher-information__content">
+                <h4 class="voucher-information__content-title">What is my voucher reference number?</h4>
                 <div class="voucher-information__reference container">
-                    <p class="col-12 text-center">44940 - 2193048 - 3087561</p>
-                    <!-- MARK: I think there is a longer - html character that might look nicer? -->
+                    <p class="col-12 text-center">44940 &#8211; 2193048 &#8211; 3087561</p>
                 </div>
                 <div class="voucher-information__reference-instructions">
                     <p>
@@ -80,20 +66,20 @@
                     </p>
                 </div>
             </div>
-            <div class="voucher-information__content text-justify">
-                <h4>How long is my voucher valid for?</h4>
+            <div class="voucher-information__content">
+                <h4 class="voucher-information__content-title">How long is my voucher valid for?</h4>
                 <p>Your voucher is valid from 27/02/2019 until 27/02/2020.</p>
             </div>
         </div>
         <div class="col"></div>
         <div class="voucher-information__column col-12 col-md-5">
-            <div class="voucher-information__content text-justify">
-                <h4>Can I have a sneak peak at the venue?</h4>
+            <div class="voucher-information__content">
+                <h4 class="voucher-information__content-title">Can I have a sneak peak at the venue?</h4>
                 <p>Explore the Langham London now by visiting our website.</p>
                 <a href="http://www.london.langhamhotels.co.uk">www.london.langhamhotels.co.uk</a>
             </div>
-            <div class="voucher-information__content text-justify">
-                <h4>Anything else I should know?</h4>
+            <div class="voucher-information__content">
+                <h4 class="voucher-information__content-title">Anything else I should know?</h4>
                 <p>
                     This gift voucher features a unique reference ID code, may only be redeemed once, may not be exchanged for cash, replaed if lost and is non-transferable or refundable.
                     The gift voucher must be presented upon arrival in order to redeem the experience. No phone screenshots or photocopies of the original voucher will be accepted.
@@ -102,8 +88,8 @@
                 </p>
             </div>
         </div>
-    </div>
-    <div class="voucher-action vertical-spacing container text-center">
+    </section>
+    <section class="voucher-action vertical-spacing container text-center">
         <h4>Please Present this voucher on arrival</h4>
         <div class="voucher-action__button-container">
             <button type="button" class="">
@@ -116,7 +102,8 @@
             </button>
         </div>
         <p>We are looking forward to welcoming you soon.</p>
-    </div>
+    </section>
+        </main>
 </body>
 
 </html>
