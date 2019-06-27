@@ -26,7 +26,7 @@ body{
 }
 
 .gift-voucher-container {
-    background-image: url(../img/voucher-1-mobile-500.svg);
+    background-image: url(../img/voucher-2-mobile.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat
@@ -127,7 +127,7 @@ body{
 
 @media (min-width: 768px) {
     .gift-voucher-container {
-        background-image: url(../img/voucher-1.svg);
+        background-image: url(../img/voucher-2.svg);
     }
     .gift-voucher {
         min-height: 300px;
