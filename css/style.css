@@ -4,7 +4,7 @@ h1, h2, h3, h4 {
 }
 
 
-p {
+p, a {
     color: #000;
     font-family: 'Tinos', serif;
     font-size: 1rem;
@@ -26,8 +26,8 @@ body{
 }
 
 .gift-voucher-container {
-    background-image: url(../img/voucher-1-mobile-500.svg);
-    background-size: contain;
+    background-image: url(../img/voucher-2-mobile.svg);
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat
 }
@@ -35,10 +35,10 @@ body{
 .gift-voucher {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    min-height: 300px;
-    padding: 25px 125px;
+    min-height: 700px;
+    padding: 0 10%;
 }
 
 .voucher-information {
@@ -126,8 +126,12 @@ body{
 }
 
 @media (min-width: 768px) {
+    .gift-voucher-container {
+        background-image: url(../img/voucher-2.svg);
+    }
     .gift-voucher {
-        background-image: url(../img/voucher-1.svg);
+        min-height: 300px;
+        padding: 0 15%;
     }
     .voucher-action__button-container {
         flex-direction: row;
