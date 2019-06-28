@@ -26,7 +26,7 @@ body{
 }
 
 .gift-voucher-container {
-    background-image: url(../img/voucher-2-mobile.svg);
+    background-image: url(../img/voucher-1-mobile.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat
@@ -118,16 +118,19 @@ body{
     align-items: center;
     padding: 1rem;
 }
+    .voucher-action__button-container button:hover {
+        background: #E4BEC0
+    }
 
-.voucher-action__button-container button p {
-    color: #a5793c;
-    margin-bottom:0;
-    margin-left: 1rem;
-}
+    .voucher-action__button-container button p {
+        color: #a5793c;
+        margin-bottom: 0;
+        margin-left: 1rem;
+    }
 
 @media (min-width: 768px) {
     .gift-voucher-container {
-        background-image: url(../img/voucher-2.svg);
+        background-image: url(../img/voucher-1.svg);
     }
     .gift-voucher {
         min-height: 300px;
