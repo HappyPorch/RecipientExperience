@@ -26,7 +26,7 @@ body{
 }
 
 .gift-voucher-container {
-    background-image: url(../img/voucher-1-mobile.svg);
+    background-image: url(../img/voucher-3-mobile.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat
@@ -38,7 +38,7 @@ body{
     justify-content: space-evenly;
     align-items: center;
     min-height: 700px;
-    padding: 0 10%;
+    padding: 13%;
 }
 
 .voucher-information {
@@ -128,14 +128,33 @@ body{
         margin-left: 1rem;
     }
 
-@media (min-width: 768px) {
-    .gift-voucher-container {
-        background-image: url(../img/voucher-1.svg);
+@media (min-width: 576px) {
+    .gift-voucher-container{
+        background-size: contain;
     }
     .gift-voucher {
-        min-height: 300px;
-        padding: 0 15%;
+        padding: 5% 17%;
     }
+}
+
+@media (min-width: 768px) {
+    .gift-voucher{
+        padding: 5% 25%
+    }
+
+ 
+}
+
+@media (min-width: 992px) {
+    .gift-voucher-container {
+        background-image: url(../img/voucher-3.svg);
+    }
+
+    .gift-voucher {
+        min-height: 500px;
+        padding: 15%;
+    }
+
     .voucher-action__button-container {
         flex-direction: row;
     }
@@ -144,3 +163,5 @@ body{
             margin: 0 2rem;
         }
 }
+
+
