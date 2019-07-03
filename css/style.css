@@ -6,7 +6,7 @@ h1, h2, h3, h4 {
 p, a {
   color: #000 !important;
   font-family: 'Tinos', serif;
-  font-size: 1em;
+  font-size: 1.05em;
   font-weight: normal;
 }
 
@@ -158,12 +158,16 @@ body {
 }
 
 @media (min-width: 992px) {
+  p, a {
+    font-size: 1em;
+  }
   .gift-voucher-container {
     background-image: url(../img/voucher-2.svg);
   }
 
   .gift-voucher {
     min-height: 500px;
+    height: 750px;
     padding: 15%;
   }
 
